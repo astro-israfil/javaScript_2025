@@ -55,5 +55,26 @@ console.log(tinderUser.name?.fullName?.firstName);
 
 console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+
+const course = {
+    name: "Python from beginner to advance",
+    courseInstructor: "Israfil",
+    price: 100,
+};
+
+const { courseInstructor: instructor, name } = course;
+
+console.log(`${name} by ${instructor}`);
+
+
+// JSON API
+[
+    { "id": 1, "name": "israfil" },
+    { "id": 2, "name": "adrian" },
+    { "id": 3, "name": "sophia" },
+    { "id": 4, "name": "kate" },
+]
